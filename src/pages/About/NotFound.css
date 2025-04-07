@@ -1,0 +1,65 @@
+/* App.css */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background: #f9f3f1;
+  }
+  
+  .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+    height: 100vh;
+    box-sizing: border-box;
+  }
+  
+  .content {
+    flex: 1;
+    padding: 20px;
+  }
+  
+  .error-code {
+    font-size: 150px;
+    margin: 0;
+    color: #b58f8b;
+  }
+  
+  .error-message {
+    font-size: 32px;
+    margin: 20px 0 10px;
+    font-weight: 600;
+  }
+  
+  .description {
+    max-width: 500px;
+    line-height: 1.6;
+    font-size: 16px;
+    color: #444;
+    margin-bottom: 30px;
+  }
+  
+  .home-button {
+    background-color: #6e3b3b;
+    color: white;
+    border: none;
+    padding: 15px 30px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 4px;
+    text-transform: uppercase;
+    font-weight: bold;
+  }
+  
+  .image-section {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .model-image {
+    max-width: 100%;
+    height: auto;
+  }
+  

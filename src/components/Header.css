@@ -1,0 +1,49 @@
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #fdf4f0;
+    font-family: Arial, sans-serif;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  .header-left {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .header-left .contact-info {
+    display: flex;
+    gap: 15px;
+  }
+  
+  .header-left .address {
+    margin-top: 5px;
+  }
+  
+  .header-right a {
+    margin-left: 15px;
+    color: #5a2c2c;
+    font-size: 18px;
+    text-decoration: none;
+  }
+  
+  .header-right a:hover {
+    color: #333;
+  }
+  
+  /* Hide the header on screens smaller than 800px */
+  @media (max-width: 600px) {
+    .header {
+      display: none;
+    }
+  }
+
+  .header-divider {
+    border: none;
+    height: 1px;
+    background-color: #ddd;
+    margin: 0;
+  }

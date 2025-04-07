@@ -1,0 +1,104 @@
+.footer {
+    background-color: #6b3f35;
+    color: #fff;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+  }
+  
+  .footer-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footer-section {
+    flex: 1;
+    margin: 10px;
+  }
+  
+  .logo-section .footer-logo {
+    font-size: 36px;
+    font-weight: bold;
+    color: #fff;
+  }
+  
+  .social-icons a {
+    font-size: 20px;
+    margin: 0 10px;
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .social-icons a:hover {
+    color: #ff6f61;
+  }
+  
+  .contact-section h3,
+  .links-section h3,
+  .newsletter-section h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+  }
+  
+  .contact-section p {
+    display: flex;
+    align-items: center;
+    margin: 5px 0;
+  }
+  
+  .contact-section i {
+    margin-right: 10px;
+  }
+  
+  .links-section ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .links-section li {
+    margin: 5px 0;
+  }
+  
+  .links-section a {
+    color: #fff;
+    text-decoration: none;
+  }
+  
+  .links-section a:hover {
+    text-decoration: underline;
+  }
+  
+  .newsletter-section form {
+    display: flex;
+    align-items: center;
+  }
+  
+  .newsletter-section input {
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+  }
+  
+  .newsletter-section button {
+    background-color: #ff6f61;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .footer-bottom {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 20px;
+    border-top: 1px solid #fff;
+    padding-top: 10px;
+  }
+  
+  .payment-icons img {
+    width: 40px;
+    margin: 0 5px;
+  }

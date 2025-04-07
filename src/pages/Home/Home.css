@@ -1,0 +1,263 @@
+.home {
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+  background-color: #f9f4f1;
+  padding-bottom: 20px;
+}
+
+.home-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.text-section {
+  width: 45%;
+  padding: 20px;
+}
+
+.subheading {
+  color: #ff6f61;
+  font-size: 14px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.title {
+  font-size: 36px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.description {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+.know-more-btn {
+  background-color: #6b3f35;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.know-more-btn:hover {
+  background-color: #ff6f61;
+}
+
+.ratings {
+  margin-top: 20px;
+}
+
+.stars {
+  color: #ffcc00;
+  font-size: 18px;
+}
+
+.rating-value {
+  font-size: 16px;
+  color: #333;
+  margin-left: 10px;
+}
+
+.image-section {
+  flex: 1;
+  position: relative;
+}
+
+.image-section img {
+  width: 100%;
+}
+
+.emergency {
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  background-color: #fff;
+  display: flex;
+  align-items: center;
+  padding: 15px 25px;
+  border-radius: 40px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  gap: 15px;
+}
+
+.emergency-icon {
+  width: 40px;
+  height: 40px;
+}
+
+.emergency-text {
+  display: flex;
+  flex-direction: column;
+  line-height: 1.4;
+}
+
+.emergency-sub {
+  color: #e65c45;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin: 0;
+  white-space: nowrap;
+}
+
+.emergency-number {
+  color: #000;
+  font-size: 18px;
+  font-weight: 800;
+  margin: 0;
+  white-space: nowrap;
+}
+
+@media (max-width: 800px) {
+  .emergency {
+    display: none;
+  }
+}
+
+.buttons-section {
+  display: flex;
+  justify-content: space-between;
+  gap: 1px;
+}
+
+.buttons-section button {
+  flex: 1;
+  background-color: #b99387;
+  color: white;
+  padding: 35px 10px;
+  border: none;
+  font-size: 14px;
+  font-weight: bold;
+  text-transform: uppercase;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: background-color 0.3s ease;
+}
+
+.buttons-section button:hover,
+.buttons-section button.active {
+  background-color: #704840;
+}
+
+.buttons-section .icon {
+  font-size: 20px;
+}
+
+.buttons-section .button-title {
+  white-space: nowrap;
+}
+
+@media (max-width: 950px) {
+  .buttons-section .button-title {
+    display: none;
+  }
+}
+
+/* Appointment Section */
+.appointment-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 40px 0;
+  border-top: 1px solid #e0cfc5;
+  gap: 40px;
+  flex-wrap: wrap;
+}
+
+.form {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  padding: 30px 0;
+}
+
+.form-row {
+  display: flex;
+  gap: 30px;
+}
+
+.form input,
+.form select {
+  flex: 1;
+  padding: 26px 30px;
+  font-size: 14px;
+  border: none;
+  border-bottom: 1px solid #8c6a5d;
+  background-color: transparent;
+  outline: none;
+  color: #333;
+}
+
+.form input::placeholder {
+  color: #555;
+}
+
+.book-slot {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  padding-top: 10px;
+}
+
+.book-slot h2 {
+  font-size: 28px;
+  font-weight: bold;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.book-button {
+  background-color: #6b3f35;
+  color: white;
+  padding: 12px 24px;
+  border: none;
+  border-radius: 4px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.book-button:hover {
+  background-color: #ff6f61;
+}
+
+/* ✅ Responsive layout for form and booking */
+@media (max-width: 1000px) {
+  .appointment-section {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .form-row {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .book-slot {
+    align-items: center;
+    text-align: center;
+    margin-top: 20px;
+  }
+
+  .book-slot h2 {
+    font-size: 24px;
+  }
+
+  .book-button {
+    margin-top: 10px;
+  }
+}
