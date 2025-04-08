@@ -39,8 +39,9 @@ const Navigation = () => {
                     <li className="dropdown">
                         <a href="#">SERVICES</a>
                         <ul className="dropdown-menu">
-                            <li><a href="#">LISTING</a></li>
-                            <li><a href="#">DETAIL</a></li>
+                            <li><Link to="/services/listing">LISTING</Link></li>
+                            <li><Link to="#">DETAIL</Link></li>
+                            
                         </ul>
                     </li>
                     <li className="dropdown">
@@ -50,8 +51,8 @@ const Navigation = () => {
                             <li><Link to="#">ONLINE STORE</Link></li>
                             <li><Link to="#">PRICING PLANS</Link></li>
                             <li><Link to="#">FAQ</Link></li>
-                            <li><Link to="/pages/Appointment">APPOINTMENT</Link></li>
-                            <li><Link to="/pages/Not-Found">404 PAGE</Link></li>
+                            <li><Link to="/pages/appointment">APPOINTMENT</Link></li>
+                            <li><Link to="/pages/not-Found">404 PAGE</Link></li>
                         </ul>
                     </li>
                     <li><Link to="/contact-us">CONTACT</Link></li>

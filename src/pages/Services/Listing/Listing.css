@@ -1,0 +1,225 @@
+/* Section Heading */
+.listing-header-section {
+    text-align: center;
+    background-color: #fff6f0;
+    padding: 0px 20px 40px;
+    max-width: 900px;
+    margin: auto;
+  }
+  
+  .listing-subtitle {
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    color: #7c2d2d;
+    letter-spacing: 2px;
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+  }
+  
+  .listing-title {
+    font-size: 2.5rem;
+    font-weight: 600;
+    color: #000;
+    margin-bottom: 1rem;
+  }
+  
+  .listing-description {
+    font-size: 1.1rem;
+    color: #333;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .listing-title {
+      font-size: 2rem;
+    }
+  
+    .listing-description {
+      font-size: 1rem;
+    }
+  }
+  
+  /* Treatments Layout */
+  .treatment-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 60px auto;
+    /* max-width: 1200px; */
+    background-color: #fff6f0;
+  }
+  
+  .treatment-image {
+    flex: 1;
+    position: relative;
+    min-width: 300px;
+  }
+  
+  .treatment-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+  
+  /* Video Overlay */
+  .video-overlay {
+    position: absolute;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-content {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    justify-content: center;
+    transition: transform 0.3s ease;
+  }
+  
+  .video-overlay:hover .video-content {
+    transform: translateY(-5px);
+  }
+  
+  .play-button {
+    width: 50px;
+    height: 50px;
+    border: 2px solid white;
+    border-radius: 50%;
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .video-text {
+    font-size: 1rem;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .video-label {
+    font-weight: bold;
+  }
+  
+  .video-subtext {
+    font-size: 1rem;
+    opacity: 0.9;
+  }
+  
+  /* Treatment Content Section */
+  .treatment-content {
+    flex: 1;
+    background-color: #7c2d2d;
+    color: white;
+    padding: 60px 40px;
+    min-height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  
+  .shine-label {
+    text-transform: uppercase;
+    font-size: 0.75rem;
+    letter-spacing: 2px;
+    font-weight: 600;
+  }
+  
+  .treatment-heading {
+    font-size: 2rem;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .treatment-description {
+    font-size: 1rem;
+    margin: 20px 0;
+    line-height: 1.6;
+  }
+  
+  .treatment-list {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+  }
+  
+  .treatment-list li {
+    margin: 10px 0;
+    font-weight: 600;
+    position: relative;
+    padding-left: 20px;
+    transition: transform 0.2s ease, color 0.2s ease;
+  }
+  
+  .treatment-list li::before {
+    content: "—";
+    position: absolute;
+    left: 0;
+    color: white;
+  }
+  
+  .treatment-list li a {
+    color: white;
+    text-decoration: none;
+    transition: color 0.3s ease;
+    display: inline-block;
+  }
+  
+  .treatment-list li:hover {
+    transform: translateX(5px);
+  }
+  
+  .treatment-list li:hover a {
+    color: #f1e0d4;
+  }
+  
+  /* Appointment Button */
+  .appointment-btn {
+    background-color: white;
+    color: #7c2d2d;
+    border: none;
+    padding: 10px 20px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+    width: fit-content;
+    align-self: flex-start;
+  }
+  
+  .appointment-btn:hover {
+    background-color: #f1e0d4;
+  }
+  
+  /* Responsive Treatment Section */
+  @media (max-width: 768px) {
+    .treatment-section {
+      flex-direction: column;
+    }
+  
+    .treatment-content {
+      padding: 30px 20px;
+    }
+  
+    .treatment-heading {
+      font-size: 1.5rem;
+    }
+  
+    .video-content {
+      flex-direction: column;
+      gap: 8px;
+    }
+  
+    .video-text {
+      text-align: center;
+      flex-direction: column;
+    }
+  }
+  
