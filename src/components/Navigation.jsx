@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import "./Navigation.css";
-import NotFound from "../pages/About/NotFound"; // Assuming NotFound is a component in your project
-import { Link } from "react-router-dom"; // Import Link from react-router-dom for navigation
+import { Link } from "react-router-dom";
 
 const Navigation = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -51,11 +50,11 @@ const Navigation = () => {
                             <li><Link to="#">ONLINE STORE</Link></li>
                             <li><Link to="#">PRICING PLANS</Link></li>
                             <li><Link to="#">FAQ</Link></li>
-                            <li><Link to="#">APPOINTMENT</Link></li>
+                            <li><Link to="/pages/Appointment">APPOINTMENT</Link></li>
                             <li><Link to="/pages/Not-Found">404 PAGE</Link></li>
                         </ul>
                     </li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><Link to="/contact-us">CONTACT</Link></li>
                 </ul>
             </div>
 

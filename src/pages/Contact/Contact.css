@@ -1,0 +1,230 @@
+/* Header Section */
+.contact-header {
+    text-align: center;
+    padding: 1rem 1rem 7rem;
+    background-color: #fff6f0;
+    background-image: url('/your-background-image.jpg'); /* optional */
+    background-size: cover;
+    background-position: center;
+    color: #000;
+  }
+  
+  .contact-header h1 {
+    font-size: 2.5rem;
+    font-weight: 700;
+    margin-bottom: 1rem;
+  }
+  
+  .breadcrumb {
+    font-size: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.5rem;
+    color: #7a4b40;
+  }
+  
+  .breadcrumb .separator {
+    color: #999;
+  }
+  
+  .breadcrumb .current {
+    color: #d24c3d;
+  }
+  
+  /* Contact Container */
+  .contact-container {
+    display: flex;
+    flex-wrap: wrap;
+    /* padding: 2rem; */
+    background-color: #fff6f0;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+  
+  /* Left Section */
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    gap: 5rem;
+    flex: 1;
+    min-width: 300px;
+    max-width: 600px;
+  }
+  
+  /* Book Slot Box */
+  .book-slot {
+    background-color: rgba(114, 49, 39, 0.9);
+    color: white;
+    padding: 2rem;
+    justify-content: center;
+  }
+  
+  .book-slot-row {
+    display: flex;
+    align-items: center;
+    gap: 1.5rem;
+  }
+  
+  .calendar-icon {
+    font-size: 3rem;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .slot-text h2 {
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  .slot-text p {
+    font-size: 0.95rem;
+    line-height: 1.4;
+  }
+  
+  /* Office Info */
+  .office-info {
+    display: flex;
+    justify-content: space-between;
+    gap: 2rem;
+    flex-wrap: wrap;
+  }
+  
+  .office-block {
+    flex: 1;
+    min-width: 230px;
+    font-size: 0.95rem;
+    color: #222;
+  }
+  
+  .office-block h3 {
+    font-size: 1.1rem;
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+  }
+  
+  /* Form Section */
+  .form-section {
+    flex: 1;
+    min-width: 320px;
+    max-width: 550px;
+    background-color: white;
+    padding: 2rem;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.05);
+    border: 1px solid #ccc;
+  }
+  
+  .form-subtitle {
+    color: #723127;
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 0.9rem;
+    margin-bottom: 0.3rem;
+  }
+  
+  .form-title {
+    font-size: 1.75rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+  }
+  
+  .form-description {
+    font-size: 0.9rem;
+    color: #444;
+    margin-bottom: 1.5rem;
+  }
+  
+  /* Form Styles */
+  .contact-form input,
+  .contact-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    margin-bottom: 1rem;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    font-size: 0.95rem;
+    background: transparent;
+  }
+  
+  .contact-form .form-row {
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .contact-form .form-row input {
+    flex: 1;
+  }
+  
+  .contact-form textarea {
+    resize: none;
+    height: 100px;
+  }
+  
+  .contact-form button {
+    background-color: #723127;
+    color: white;
+    border: none;
+    padding: 1rem;
+    font-size: 0.95rem;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100%;
+    text-transform: uppercase;
+    transition: 0.3s ease;
+  }
+  
+  .contact-form button:hover {
+    background-color: #5a241f;
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 770px) {
+    .contact-header h1 {
+      font-size: 2rem;
+    }
+  
+    .breadcrumb {
+      font-size: 0.9rem;
+      flex-wrap: wrap;
+      gap: 0.3rem;
+    }
+  
+    .contact-container {
+      flex-direction: column;
+      padding: 1rem;
+    }
+  
+    .left-section,
+    .form-section {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .office-info {
+      flex-direction: column;
+    }
+  
+    .form-row {
+      flex-direction: column;
+    }
+  
+    .book-slot-row {
+      flex-direction: column;
+      align-items: flex-start;
+    }
+  
+    .calendar-icon {
+      font-size: 2.5rem;
+    }
+  
+    .slot-text h2 {
+      font-size: 1.3rem;
+    }
+  
+    .slot-text p {
+      font-size: 0.9rem;
+    }
+  }
+  

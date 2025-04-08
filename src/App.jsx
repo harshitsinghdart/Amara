@@ -5,6 +5,8 @@ import Home from './pages/Home/Home';
 import './App.css'
 import Navigation from './components/Navigation';
 import NotFound from './pages/About/NotFound';
+import ContactUs from './pages/Contact/Contact';
+import Appointmentpp from './pages/page/Appointment';
 
 function App() {
 
@@ -19,7 +21,8 @@ function App() {
           <Route path="/doctors" element={<Doctors />} />
           <Route path="/services" element={<Services />} /> */}
           <Route path="/pages/Not-Found" element={<NotFound />} />
-          {/* <Route path="/contact" element={<Contact />} /> */}
+          <Route path="/pages/Appointment" element={<Appointmentpp />} />
+          <Route path="/contact-us" element={<ContactUs />} />
         </Routes>
       </main>
       <Footer />

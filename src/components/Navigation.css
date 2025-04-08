@@ -6,7 +6,7 @@
     padding-bottom: 50px;
     background-color: #fdf4f0;
     font-family: Arial, sans-serif;
-    background: linear-gradient(to right, #fdf4f0 50%, #d5c1bb 50%);
+    /* background: linear-gradient(to right, #fdf4f0 50%, #d5c1bb 50%); */
   }
   
   @media (max-width: 1400px) {
