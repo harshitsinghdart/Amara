@@ -1,8 +1,8 @@
 import React from "react";
 import { motion } from "framer-motion";
 import "./Contact.css";
-import MapLocation from "../../components/MapLocation";
-import BackToTop from "../../components/BackToTop";
+import MapLocation from "../../components/MapLocation/MapLocation";
+import BackToTop from "../../components/BackToTop/BackToTop";
 
 export default function ContactUs() {
   return (

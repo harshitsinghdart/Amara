@@ -1,8 +1,8 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
-import ImageWrapper from '../../../components/ImageWrapper';
+import ImageWrapper from '../../../components/ImageWrapper/ImageWrapper';
 import './Listing.css';
-import ImageSlider from '../../../components/ImageSlider';
+import ImageSlider from '../../../components/ImageSlider/ImageSlider';
 
 const StatItem = ({ value, label, suffix = '' }) => {
   const controls = useAnimation();

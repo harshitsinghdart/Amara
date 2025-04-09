@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import "./Appointment.css";
-import MapLocation from "../../components/MapLocation";
-import BackToTop from "../../components/BackToTop";
+import MapLocation from "../../components/MapLocation/MapLocation";
+import BackToTop from "../../components/BackToTop/BackToTop";
 
 const Appointment = () => {
   const [isDropdownOpen, setIsDropdownOpen] = useState(false);
