@@ -39,8 +39,8 @@ const Navigation = () => {
                     <li className="dropdown">
                         <a href="#">SERVICES</a>
                         <ul className="dropdown-menu">
-                            <li><Link to="/services/listing">LISTING</Link></li>
-                            <li><Link to="#">DETAIL</Link></li>
+                            <li><Link to="/our-services/listing">LISTING</Link></li>
+                            <li><Link to="/our-services/detail">DETAIL</Link></li>
                             
                         </ul>
                     </li>
