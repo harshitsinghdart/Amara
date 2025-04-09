@@ -2,7 +2,6 @@ import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import ImageWrapper from '../../../components/ImageWrapper';
 import './Listing.css';
-import ImageSlider from '../../../components/ImageSlider';
 
 const StatItem = ({ value, label, suffix = '' }) => {
   const controls = useAnimation();
@@ -59,7 +58,7 @@ const ImageComparison = ({ before, after }) => {
   };
 
   return (
-    <motion.div
+    <div
       className="image-comparison-container"
       ref={containerRef}
       onMouseDown={handleMouseDown}
@@ -69,42 +68,20 @@ const ImageComparison = ({ before, after }) => {
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
-      initial={{ opacity: 0, y: 50 }}
-      whileInView={{ opacity: 1, y: 0 }}
-      transition={{ duration: 0.6 }}
-      viewport={{ once: true }}
     >
-      <motion.img
-        src={after}
-        className="image-layer"
-        alt="After"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 0.8 }}
-      />
-      <motion.img
+      <img src={after} className="image-layer" alt="After" />
+      <img
         src={before}
         className="image-layer clipped"
         alt="Before"
         style={{ clipPath: `inset(0 ${100 - sliderPosition}% 0 0)` }}
-        transition={{ duration: 0.3 }}
       />
-      <motion.div
-        className="slider"
-        style={{ left: `${sliderPosition}%` }}
-        transition={{ type: 'spring', stiffness: 120, damping: 20 }}
-      >
-        <motion.div
-          className="drag-circle"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          DRAG
-        </motion.div>
-      </motion.div>
+      <div className="slider" style={{ left: `${sliderPosition}%` }}>
+        <div className="drag-circle">DRAG</div>
+      </div>
       <div className="label before-label">BEFORE</div>
       <div className="label after-label">AFTER</div>
-    </motion.div>
+    </div>
   );
 };
 
@@ -181,19 +158,62 @@ const Listing = () => {
 
       {/* Before & After Gallery Section */}
       <div className="gallery-wrapper">
-        <div className="gallery-text">
-          <p className="gallery-subtitle">PORTFOLIO</p>
-          <h2 className="gallery-title">BEFORE & AFTER GALLERY</h2>
-          <p className="gallery-description">
+        <motion.div
+          className="gallery-text"
+          initial={{ opacity: 0, y: 40 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          transition={{ duration: 0.6 }}
+          viewport={{ once: true }}
+        >
+          <motion.p
+            className="gallery-subtitle"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.1, duration: 0.5 }}
+          >
+            PORTFOLIO
+          </motion.p>
+
+          <motion.h2
+            className="gallery-title"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.2, duration: 0.5 }}
+          >
+            BEFORE & AFTER GALLERY
+          </motion.h2>
+
+          <motion.p
+            className="gallery-description"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.3, duration: 0.5 }}
+          >
             Aliquam magna massa, gravida finibus fermentum sit amet. Suspendisse consequat lacus libero.
             In ultricies gravida Maecenas nec erat sit amet eros venenatis ultricies.
-          </p>
-          <button className="gallery-button">VIEW ALL</button>
-          <p className="insurance-note">
+          </motion.p>
+
+          <motion.button
+            className="gallery-button"
+            initial={{ opacity: 0, scale: 0.9 }}
+            whileInView={{ opacity: 1, scale: 1 }}
+            transition={{ delay: 0.4, duration: 0.4 }}
+            whileHover={{ scale: 1.05 }}
+            whileTap={{ scale: 0.95 }}
+          >
+            VIEW ALL
+          </motion.button>
+
+          <motion.p
+            className="insurance-note"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            transition={{ delay: 0.5, duration: 0.5 }}
+          >
             <strong>No Insurance?</strong><br />
             Get your preventive care for a low monthly fee
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         <div className="gallery-images drag-image-wrapper-row">
           <div className="comparison-column">
@@ -210,7 +230,6 @@ const Listing = () => {
           </div>
         </div>
       </div>
-      <ImageSlider />
     </>
   );
 };

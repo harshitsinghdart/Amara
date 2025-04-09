@@ -1,0 +1,50 @@
+.slider-container {
+    width: 100%;
+    overflow: hidden;
+    background-color: white;
+    /* padding: 20px 0; */
+    position: relative;
+  }
+  
+  .slider-track {
+    display: flex;
+    will-change: transform;
+  }
+  
+  .slider-image-wrapper {
+    position: relative;
+    flex-shrink: 0;
+    width: 250px;
+    height: 240px;
+    cursor: pointer;
+    overflow: hidden;
+  }
+  
+  .slider-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+  }
+  
+  .overlay {
+    position: absolute;
+    inset: 0;
+    background-color: rgba(0, 0, 0, 0.4);
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.3s ease;
+  }
+  
+  .slider-image-wrapper:hover .overlay {
+    opacity: 1;
+  }
+  
+  .instagram-icon {
+    color: white;
+    width: 32px;
+    height: 32px;
+  }
+  
