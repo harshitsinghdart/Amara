@@ -235,6 +235,37 @@
   background-color: #ff6f61;
 }
 
+/* DragImage */
+
+.portfolio-intro {
+  text-align: center;
+  padding: 80px 20px 40px;
+  background-color: #f9f4f1;
+}
+
+.portfolio-subtitle {
+  font-size: 14px;
+  color: #e65c45;
+  font-weight: bold;
+  text-transform: uppercase;
+  margin-bottom: 12px;
+  letter-spacing: 2px;
+}
+
+.portfolio-title {
+  font-size: 40px;
+  font-weight: 800;
+  color: #000;
+  margin-bottom: 20px;
+}
+
+.portfolio-description {
+  font-size: 18px;
+  color: #333;
+  max-width: 800px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
 
 
 

@@ -7,6 +7,7 @@ import TreatmentSection from "../../components/TreatmentLayout/TreatmentLayout";
 import TestimonialSection from "../../components/TreatmentSection/TreatmentSection";
 import DoctorsSection from "../../components/DoctorsSection/DoctorsSection";
 import PerfectSkinSection from "../../components/PerfectSkinSection/PerfectSkinSection";
+import DragImage from "../../components/DragImage/DragImage";
 
 const Home = () => {
   const [activeContent, setActiveContent] = useState({
@@ -167,7 +168,17 @@ const Home = () => {
       {/* Treatment-section */}
       <TreatmentSection />
 
-      {/*  */}
+      {/* DragImage */}
+      <div className="portfolio-intro">
+        <p className="portfolio-subtitle">OUR PORTFOLIO</p>
+        <h2 className="portfolio-title">REAL TIME BEFORE & AFTER GALLERY</h2>
+        <p className="portfolio-description">
+          Bestibulum iaculis maecenas purus lectus, aliquam sit amet pellentesque consequat, <br />
+          placerat id magna.
+        </p>
+      </div>
+
+      <DragImage />
 
       {/* PerfectSkinSection  */}
       <PerfectSkinSection />
@@ -176,7 +187,7 @@ const Home = () => {
 
       <DoctorsSection />
 
-      
+
       {/* Testimonial Section */}
       <TestimonialSection />
 
