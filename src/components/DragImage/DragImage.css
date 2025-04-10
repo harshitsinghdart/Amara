@@ -1,4 +1,4 @@
-.drag-image-wrapper-row {
+.custom-drag-wrapper {
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -7,23 +7,23 @@
     flex-wrap: wrap;
   }
   
-  .comparison-column {
+  .custom-comparison-column {
     width: 100%;
-    max-width: 1500px; /* Max out on large screens */
+    max-width: 600px;
     position: relative;
   }
   
-  .image-comparison-container {
+  .custom-comparison-container {
     position: relative;
     width: 100%;
-    height: 600px; /* Default height for desktops */
+    height: 600px;
     overflow: hidden;
     cursor: ew-resize;
     user-select: none;
     background: none;
   }
   
-  .image-layer {
+  .custom-image-layer {
     position: absolute;
     width: 100%;
     height: 100%;
@@ -32,11 +32,11 @@
     left: 0;
   }
   
-  .clipped {
+  .custom-clipped {
     z-index: 2;
   }
   
-  .slider {
+  .custom-slider {
     position: absolute;
     top: 0;
     bottom: 0;
@@ -46,7 +46,7 @@
     transform: translateX(-1px);
   }
   
-  .drag-circle {
+  .custom-drag-circle {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -61,50 +61,48 @@
     letter-spacing: 2px;
   }
   
-  .label {
+  .custom-label {
     position: absolute;
     top: 50%;
     transform: translateY(-50%) rotate(-90deg);
     font-size: 15px;
     font-weight: 600;
-    /* color: #5e3f3a; */
     letter-spacing: 3px;
     z-index: 5;
     pointer-events: none;
   }
   
-  .before-label {
+  .custom-before-label {
     left: 15px;
   }
   
-  .after-label {
+  .custom-after-label {
     right: 15px;
   }
   
   /* 📱 Tablet and below */
   @media (max-width: 1024px) {
-    .image-comparison-container {
+    .custom-comparison-container {
       height: 600px;
     }
   }
   
   /* 📱 Mobile devices */
   @media (max-width: 768px) {
-    .drag-image-wrapper-row {
-      /* gap: 40px; */
+    .custom-drag-wrapper {
       padding: 40px 15px;
     }
   
-    .image-comparison-container {
+    .custom-comparison-container {
       height: 450px;
     }
   
-    .drag-circle {
+    .custom-drag-circle {
       font-size: 12px;
       padding: 16px;
     }
   
-    .label {
+    .custom-label {
       font-size: 13px;
       letter-spacing: 2px;
     }
@@ -112,16 +110,16 @@
   
   /* 📱 Extra small screens */
   @media (max-width: 480px) {
-    .image-comparison-container {
+    .custom-comparison-container {
       height: 350px;
     }
   
-    .drag-circle {
+    .custom-drag-circle {
       font-size: 11px;
       padding: 14px;
     }
   
-    .label {
+    .custom-label {
       font-size: 11px;
       letter-spacing: 1px;
     }
