@@ -1,0 +1,89 @@
+.doctors-section {
+    padding: 60px 80px;
+    background-color: white;
+    text-align: center;
+  }
+  
+  .doctors-heading h5 {
+    color: #bb5233;
+    letter-spacing: 2px;
+    font-weight: 500;
+    margin-bottom: 10px;
+  }
+  
+  .doctors-heading h2 {
+    font-size: 36px;
+    font-weight: 700;
+    margin-bottom: 15px;
+  }
+  
+  .doctors-heading p {
+    color: #444;
+    max-width: 700px;
+    margin: 0 auto 40px;
+    font-size: 16px;
+  }
+  
+  .doctors-wrapper {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 30px;
+  }
+  
+  .doctor-card {
+    flex: 1 1 22%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .doctor-image-container {
+    position: relative;
+    width: 100%;
+    height: 420px;
+    overflow: hidden;
+  }
+  
+  .doctor-images {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+  }
+  
+  .social-overlay {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: rgba(102, 62, 43, 0.95); /* matching brown overlay */
+    color: white;
+    text-align: center;
+    padding: 12px 0;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+    font-size: 16px;
+    letter-spacing: 2px;
+  }
+  
+  .doctor-image-container:hover .social-overlay {
+    opacity: 1;
+  }
+  
+  .doctor-name {
+    margin-top: 20px;
+    font-weight: 700;
+    font-size: 20px;
+    text-transform: uppercase;
+    color: #111;
+  }
+  
+  .doctor-specialty {
+    margin-top: 5px;
+    color: #8b4b33;
+    letter-spacing: 1px;
+    font-size: 14px;
+  }
+  

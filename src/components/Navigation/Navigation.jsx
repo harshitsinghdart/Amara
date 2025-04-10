@@ -60,7 +60,7 @@ const Navigation = () => {
             </div>
 
             <div className="nav-right">
-                <a href="#" className="appointment-btn">APPOINTMENT</a>
+                <a href="#" className="appointment-btns">APPOINTMENT</a>
                 <div className="hamburger" onClick={toggleMobileMenu}>
                     <i className="fas fa-bars"></i>
                 </div>

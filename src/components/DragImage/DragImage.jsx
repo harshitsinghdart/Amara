@@ -1,7 +1,7 @@
 import React, { useEffect, useRef, useState } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import ImageWrapper from '../../../components/ImageWrapper';
-import './Listing.css';
+import './DragImage.css';
 
 const StatItem = ({ value, label, suffix = '' }) => {
   const controls = useAnimation();
@@ -234,4 +234,4 @@ const Listing = () => {
   );
 };
 
-export default Listing;
+export default ImageComparison;

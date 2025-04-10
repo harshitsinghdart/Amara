@@ -205,7 +205,7 @@
   color: #555;
 }
 
-.book-slot {
+.book-slots {
   flex: 1;
   display: flex;
   flex-direction: column;
@@ -214,14 +214,14 @@
   padding-top: 10px;
 }
 
-.book-slot h2 {
+.book-slots h2 {
   font-size: 28px;
   font-weight: bold;
   color: #000;
   margin-bottom: 20px;
 }
 
-.book-button {
+.book-buttons {
   background-color: #6b3f35;
   color: white;
   padding: 12px 24px;
@@ -231,9 +231,12 @@
   cursor: pointer;
 }
 
-.book-button:hover {
+.book-buttons:hover {
   background-color: #ff6f61;
 }
+
+
+
 
 /* ✅ Responsive layout for form and booking */
 @media (max-width: 1000px) {
@@ -247,17 +250,17 @@
     gap: 12px;
   }
 
-  .book-slot {
+  .book-slots {
     align-items: center;
     text-align: center;
     margin-top: 20px;
   }
 
-  .book-slot h2 {
+  .book-slots h2 {
     font-size: 24px;
   }
 
-  .book-button {
+  .book-buttons {
     margin-top: 10px;
   }
 }

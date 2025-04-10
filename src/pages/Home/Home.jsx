@@ -1,5 +1,12 @@
 import React, { useState } from "react";
 import "./Home.css";
+import ImageWrapper from "../../components/ImageWrapper/ImageWrapper";
+import BackToTop from "../../components/BackToTop/BackToTop";
+import ImageSlider from "../../components/ImageSlider/ImageSlider";
+import TreatmentSection from "../../components/TreatmentLayout/TreatmentLayout";
+import TestimonialSection from "../../components/TreatmentSection/TreatmentSection";
+import DoctorsSection from "../../components/DoctorsSection/DoctorsSection";
+import PerfectSkinSection from "../../components/PerfectSkinSection/PerfectSkinSection";
 
 const Home = () => {
   const [activeContent, setActiveContent] = useState({
@@ -63,73 +70,120 @@ const Home = () => {
     setActiveContent(content);
   };
 
+  const doctors = [
+    {
+      name: 'Dr. Joe Thomas',
+      specialty: 'Cosmetic Dermatologist',
+      image: 'https://sirpi.wpengine.com/wp-content/uploads/2023/06/doctor-image-4.webp',
+    },
+    {
+      name: 'Dr. Riyas Faisan',
+      specialty: 'Teledermatologist',
+      image: 'https://sirpi.wpengine.com/wp-content/uploads/2023/06/doctor-image-4.webp',
+    },
+    {
+      name: 'Dr. Ema Grenger',
+      specialty: 'Pediatric Dermatologist',
+      image: 'https://sirpi.wpengine.com/wp-content/uploads/2023/06/doctor-image-4.webp',
+    },
+    {
+      name: 'Dr. Jaccob',
+      specialty: 'Mohs Surgeon',
+      image: 'https://sirpi.wpengine.com/wp-content/uploads/2023/06/doctor-image-4.webp',
+    },
+  ];
+
   return (
-    <div className="home">
-      <div className="home-content">
-        <div className="text-section">
-          <p className="subheading">FACE - SURGERY</p>
-          <h1 className="title">{activeContent.title}</h1>
-          <p className="description">{activeContent.description}</p>
-          <button className="know-more-btn">Know More</button>
-          <div className="ratings">
-            <span className="stars">{activeContent.stars}</span>
-            <span className="rating-value">{activeContent.ratingValue}</span>
-            <p>{activeContent.content}</p>
+    <>
+      <div className="home">
+        <div className="home-content">
+          <div className="text-section">
+            <p className="subheading">FACE - SURGERY</p>
+            <h1 className="title">{activeContent.title}</h1>
+            <p className="description">{activeContent.description}</p>
+            <button className="know-more-btn">Know More</button>
+            <div className="ratings">
+              <span className="stars">{activeContent.stars}</span>
+              <span className="rating-value">{activeContent.ratingValue}</span>
+              <p>{activeContent.content}</p>
+            </div>
           </div>
-        </div>
-        <div className="image-section">
-          <img src={activeContent.image} alt="Active Content" />
-          <div className="emergency">
-            <img
-              src="https://cdn-icons-png.flaticon.com/512/724/724664.png"
-              alt="Call Icon"
-              className="emergency-icon"
-            />
-            <div className="emergency-text">
-              <p className="emergency-sub">24/7 EMERGENCY</p>
-              <p className="emergency-number">+000 123 456 789</p>
+          <div className="image-section">
+            <img src={activeContent.image} alt="Active Content" />
+            <div className="emergency">
+              <img
+                src="https://cdn-icons-png.flaticon.com/512/724/724664.png"
+                alt="Call Icon"
+                className="emergency-icon"
+              />
+              <div className="emergency-text">
+                <p className="emergency-sub">24/7 EMERGENCY</p>
+                <p className="emergency-number">+000 123 456 789</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
 
-      <div className="buttons-section">
-        {contents.map((content) => (
-          <button
-            key={content.title}
-            className={activeContent.title === content.title ? "active" : ""}
-            onMouseEnter={() => handleHover(content)}
-          >
-            <span className="icon">{content.icon}</span>
-            <span className="button-title">{content.title}</span>
-          </button>
-        ))}
-      </div>
+        <div className="buttons-section">
+          {contents.map((content) => (
+            <button
+              key={content.title}
+              className={activeContent.title === content.title ? "active" : ""}
+              onMouseEnter={() => handleHover(content)}
+            >
+              <span className="icon">{content.icon}</span>
+              <span className="button-title">{content.title}</span>
+            </button>
+          ))}
+        </div>
 
-      <div className="appointment-section">
-        <div className="form">
-          <div className="form-row">
-            <input type="text" placeholder="Name" />
-            <input type="text" placeholder="Reason for Appointment" />
+        <div className="appointment-section">
+          <div className="form">
+            <div className="form-row">
+              <input type="text" placeholder="Name" />
+              <input type="text" placeholder="Reason for Appointment" />
+            </div>
+            <div className="form-row">
+              <input type="email" placeholder="Your Email" />
+              <input type="datetime-local" placeholder="Date & Time" />
+              <select>
+                <option value="">Treatment Type</option>
+                <option value="skin">Skin Rejuvenation</option>
+                <option value="laser">Laser Resurfacing</option>
+                <option value="peel">Peel Brighten</option>
+                <option value="acne">Acne Light Therapy</option>
+              </select>
+            </div>
           </div>
-          <div className="form-row">
-            <input type="email" placeholder="Your Email" />
-            <input type="datetime-local" placeholder="Date & Time" />
-            <select>
-              <option value="">Treatment Type</option>
-              <option value="skin">Skin Rejuvenation</option>
-              <option value="laser">Laser Resurfacing</option>
-              <option value="peel">Peel Brighten</option>
-              <option value="acne">Acne Light Therapy</option>
-            </select>
+          <div className="book-slots">
+            <h2>BOOK YOUR SLOT</h2>
+            <button className="book-buttons">APPOINTMENT</button>
           </div>
         </div>
-        <div className="book-slot">
-          <h2>BOOK YOUR SLOT</h2>
-          <button className="book-button">APPOINTMENT</button>
-        </div>
       </div>
-    </div>
+
+      <ImageWrapper />
+
+      {/* Treatment-section */}
+      <TreatmentSection />
+
+      {/*  */}
+
+      {/* PerfectSkinSection  */}
+      <PerfectSkinSection />
+
+      {/* Doctor SEction */}
+
+      <DoctorsSection />
+
+      
+      {/* Testimonial Section */}
+      <TestimonialSection />
+
+      {/* InstaGramSlider */}
+      <ImageSlider />
+      <BackToTop />
+    </>
   );
 };
 
