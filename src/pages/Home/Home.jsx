@@ -8,6 +8,7 @@ import TestimonialSection from "../../components/TreatmentSection/TreatmentSecti
 import DoctorsSection from "../../components/DoctorsSection/DoctorsSection";
 import PerfectSkinSection from "../../components/PerfectSkinSection/PerfectSkinSection";
 import DragImage from "../../components/DragImage/DragImage";
+import PickYourTreatment from "../../components/PickYourTreatment/PickYourTreatment";
 
 const Home = () => {
   const [activeContent, setActiveContent] = useState({
@@ -168,6 +169,59 @@ const Home = () => {
       {/* Treatment-section */}
       <TreatmentSection />
 
+      {/* PickYourTreatment */}
+
+      <PickYourTreatment />
+
+      {/* detail-treatment */}
+
+      <div className="detail-treatment-section">
+        <div className="detail-treatment-box">
+          <div className="detail-image-wrapper">
+            <img
+              src="https://sirpi.wpengine.com/wp-content/uploads/2023/05/Sirpi-Banner-Image-Box-1-1.png"
+              alt="Treatment Women's"
+              className="detail-treatment-image"
+            />
+            <div className="detail-overlay">
+              <span className="detail-line"></span>
+              <h3 className="detail-treatment-title">TREATMENT WOMEN'S</h3>
+            </div>
+          </div>
+        </div>
+
+
+        <div className="detail-treatment-box">
+          <div className="detail-image-wrapper">
+            <img
+              src="https://sirpi.wpengine.com/wp-content/uploads/2023/05/Sirpi-Banner-Image-Box-2-1.png"
+              alt="Treatment Men's"
+              className="detail-treatment-image"
+            />
+            <div className="detail-overlay">
+              <span className="detail-line"></span>
+              <h3 className="detail-treatment-title">TREATMENT MEN'S</h3>
+            </div>
+          </div>
+        </div>
+
+        <div className="detail-treatment-description">
+          Werabitur Et Finibus Nunc. Aliquam Erat Volutpat. Sed Ac Pulvinar Sapien. Sed Volutpat Nisl Nunc, Eu Efficitur Ipsunulla Neque, Ut Laoreeterat Muthu Sodales Vel Curabitur Vitae Tortor Eu Felis Scelerisque Varius A Non Nibh. Orci Varius Natoqu Mus. Nunc At Finibus Augue. Maecenas Varius Sagittis Lacus.
+        </div>
+
+      </div>
+      <div className="detail-signature-section">
+        <img
+          src="https://sirpi.wpengine.com/wp-content/uploads/2023/05/signature.png"
+          alt="Signature"
+          className="detail-signature-img"
+        />
+        <h4 className="detail-ceo-text">
+          ALLEN MILLER <span className="detail-ceo-role">– CEO</span>
+        </h4>
+        <button className="detail-readmore-btn">READ MORE ABOUT US</button>
+      </div>
+
       {/* DragImage */}
       <div className="portfolio-intro">
         <p className="portfolio-subtitle">OUR PORTFOLIO</p>
@@ -177,7 +231,6 @@ const Home = () => {
           placerat id magna.
         </p>
       </div>
-
       <DragImage />
 
       {/* PerfectSkinSection  */}

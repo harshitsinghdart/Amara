@@ -15,7 +15,7 @@ export default function App() {
       </div>
       <div className="image-section">
         <img
-          src="/path-to-your-image.jpg"
+          src="https://sirpi.wpengine.com/wp-content/uploads/2023/05/404-bg-scaled.jpg"
           alt="Model"
           className="model-image"
         />

@@ -9,6 +9,7 @@ import ContactUs from './pages/Contact/Contact';
 import Appointmentpp from './pages/Page/Appointment';
 import Listing from './pages/Services/Listing/Listing';
 import Detail from './pages/Services/Detail/Detail';
+import About from './pages/About/About';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <main className="p-4">
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/our-services/listing" element={<Listing />} />
           <Route path="/our-services/detail" element={<Detail />} />
           <Route path="/pages/appointment" element={<Appointmentpp />} />

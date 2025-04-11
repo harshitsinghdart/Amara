@@ -18,6 +18,11 @@
   .logo {
     flex: 1;
   }
+
+  .logo-img {
+    height: 35px; /* Reduced from 50px to 35px */
+    object-fit: contain;
+}
   
   .nav-center {
     flex: 3;

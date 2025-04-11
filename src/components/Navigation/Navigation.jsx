@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import "./Navigation.css";
 import { Link } from "react-router-dom";
+import logo from "../../assets/AmaraLogo.svg";
 
 const Navigation = () => {
     const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
@@ -12,7 +13,9 @@ const Navigation = () => {
     return (
         <nav className="navigation">
             <div className="logo">
-                <h1>Sirpi</h1>
+            <Link to="/">
+                    <img src={logo} alt="Sirpi Logo" className="logo-img" />
+                </Link>
             </div>
 
             <div className="nav-center">
@@ -28,7 +31,7 @@ const Navigation = () => {
                             <li><a href="#">RTL VERSION</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><Link to="/about">ABOUT</Link></li>
                     <li className="dropdown">
                         <a href="#">DOCTORS</a>
                         <ul className="dropdown-menu">
